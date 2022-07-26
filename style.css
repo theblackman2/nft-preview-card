@@ -1,0 +1,158 @@
+:root{
+  --soft-blue : hsl(215, 51%, 70%);
+  --cyan : hsl(178, 100%, 50%);
+  --main-bg : hsl(217, 54%, 11%);
+  --card-bg : hsl(216, 50%, 16%);
+  --line-dark-blue : hsl(215, 32%, 27%);
+  --white : hsl(0, 0%, 100%);
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+  transition: .5s;
+}
+
+a:hover{
+  color: var(--cyan);
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+  color: var(--white);
+}
+
+p{
+  font-size: 18px;
+}
+
+.container{
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--main-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card{
+  width: 270px;
+  height: 470px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: var(--card-bg);
+}
+
+.card-img{
+  width: 100%;
+  height: 50%;
+  border-radius: 6px;
+  position: relative;
+}
+
+.view{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--cyan);
+  opacity: 0;
+  border-radius: inherit;
+  transition: .5s;
+}
+
+.view:hover{
+  opacity: .4;
+  cursor: pointer;
+}
+
+.view img{
+  width: 40px;
+  height: auto;
+}
+
+.card-img>img{
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.card-infos{
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title{
+  font-weight: 600;
+  margin-top: 1em;
+}
+
+.card-description{
+  font-weight: 300;
+  color: var(--soft-blue);
+  font-size: 15px;
+}
+
+.card-value{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ether-value,
+.time-left{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ether-value img{
+  margin-right: 5px;
+}
+
+.ether-value span{
+  color: var(--cyan);
+}
+
+.time-left span{
+  color: var(--soft-blue);
+}
+
+.separator{
+  display: inline-block;
+  width: 100%;
+  height: .5px;
+  background-color: var(--line-dark-blue);
+}
+
+.user-infos{
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.avatar{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin-right: 7px;
+}
+
+.avatar img{
+  width: 100%;
+  height: 100%;
+}
+
+.user-text{
+  color: var(--soft-blue);
+  margin-right: 5px;
+}

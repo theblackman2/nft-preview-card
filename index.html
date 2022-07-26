@@ -8,26 +8,53 @@
   
   <title>Frontend Mentor | NFT preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- google fonts import -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="container">
+    <div class="card">
+      <div class="card-img">
+        <span class="view">
+          <img src="images/icon-view.svg" alt="Icon View" />
+        </span>
+        <img src="images/image-equilibrium.jpg" alt="Image image-equilibrium">
+      </div>
+      <div class="card-infos">
+        <h3 class="card-title">
+          <a href="#">Equilibrium #3429</a>
+        </h3>
+        <p class="card-description">
+          Our equilibrium collection promotes balance and calm.
+        </p>
+        <div class="card-value">
+          <div class="ether-value">
+            <img src="images/icon-ethereum.svg" alt="Ethereum icon">
+            <span>0.41ETH</span>
+          </div>
+          <div class="time-left">
+            <img src="images/icon-clock.svg" alt="Clock icon">
+            <span>3 days left</span>
+          </div>
+        </div>
+        <span class="separator"></span>
+        <div class="user-infos">
+          <span class="avatar">
+            <img src="images/image-avatar.png" alt="Avatar">
+          </span>
+          <span class="user-text">Creation of</span>
+          <span class="user-name">
+            <a href="https://pkasonga.wordifysites.com/">Pascal Kasonga</a>
+          </span>
+        </div>
+      </div>
+    </div>
   </div>
+
 </body>
 </html>
